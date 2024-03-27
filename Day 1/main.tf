@@ -7,4 +7,7 @@ resource "aws_instance" "test" {
   instance_type = "t2.micro"
   subnet_id = "subnet-"
   key_name = "master"
+  tags = {
+    Name = "testing"
+  }
 }
